@@ -1,7 +1,7 @@
 let container = document.querySelector("#container");
 let dino = document.querySelector("#dino");
 
-
+//dino jumping code
 window.addEventListener("keydown" , (e) => {
     console.log(e);
     if(e.key == "ArrowUp")
