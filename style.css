@@ -38,3 +38,20 @@ left: 20px;
     width: 70px;
     
 }
+
+.animatedino{
+    animation:dinoanimation 0.5s linear infinite;
+}
+@keyframes dinoanimation{
+
+    0%,100%{
+        bottom: 30px;
+
+    }
+
+    45%,55%{
+        bottom:200px;
+    }
+    
+}
+
