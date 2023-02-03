@@ -1,46 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: grid;
     height: 100vh;
     place-items: center;
 }
 
-#container{
-    width:1200px;
+#container {
+    width: 1200px;
     height: 400px;
-    background-color: antiquewhite;  
-    position:relative;
+    /* background-color: antiquewhite;   */
+    position: relative;
+    overflow: hidden;
 }
 
-#dino{
-/* background-color:yellow; */
+#dino {
+    /* background-color:yellow; */
     height: 70px;
     width: 70px;
-    position:absolute;
-    bottom:30px;
+    position: absolute;
+    bottom: 30px;
     left: 20px;
+    z-index: 1;
 }
 
-#dino img{
+#dino img {
     height: 70px;
     width: 70px;
 }
 
-.animatedino{
-    animation:dinoanimation 0.5s linear infinite;
+.animatedino {
+    animation: dinoanimation 0.5s linear infinite;
 }
 
-@keyframes dinoanimation{
-    0%,100%{
+@keyframes dinoanimation {
+    0%,
+    100% {
         bottom: 30px;
     }
-    45%,55%{
-        bottom:200px;
-    }  
+    45%,
+    55% {
+        bottom: 200px;
+    }
 }
 
+#obstacle {
+    /* background-color: azure; */
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+
+#obstacle img {
+    height: 70px;
+    width: 100px;
+}
+
+
+.animateobstacle {
+    animation: obstacleanimation 3s linear infinite;
+}
+
+@keyframes obstacleanimation {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
