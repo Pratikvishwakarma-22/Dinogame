@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+#container{
+    width:1200px;
+    height: 400px;
+    background-color: antiquewhite;  
+    position:relative;
+}
+
+#dino{
+/* background-color:yellow; */
+    height: 70px;
+    width: 70px;
+    position:absolute;
+    bottom:30px;
+    left: 20px;
+}
+
+#dino img{
+    height: 70px;
+    width: 70px;
+}
+
+.animatedino{
+    animation:dinoanimation 0.5s linear infinite;
+}
+
+@keyframes dinoanimation{
+    0%,100%{
+        bottom: 30px;
+    }
+    45%,55%{
+        bottom:200px;
+    }  
+}
+
